@@ -195,7 +195,7 @@
     <div class="order">
         <div class="container">
             <div class="title">Замовляй пробний день прямо зараз!</div>
-            <form action="#" class="order__form">
+            <form action="#" class="order__form" onsubmit="return false;">
                 <input required placeholder="Ваше імя" name="name" type="text" class="order__input">
                 <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="order__input">
                 <img src="icons/right.svg" alt="right">
@@ -268,13 +268,13 @@
                     <div class="modal__title">Ми зв'яжемось з вами як найшвидше</div>
                     <input required placeholder="Ваше ім'я" name="name" type="text" class="modal__input">
                     <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
-                    <button class="btn btn_dark btn_min">Передзвоніть мені</button>
+                    <button class="btn btn_dark btn_min" type="submit">Передзвоніть мені</button>
                 </form>
             </div>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="../dist/bundle.js"></script>
+    <script src="../js/bundle.js"></script>
 </body>
 </html>

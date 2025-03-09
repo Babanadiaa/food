@@ -8,12 +8,13 @@ import slider from './modules/slider';
 import timer from './modules/timer';
 import forms from './modules/forms';
 import { openModal } from './modules/modal';
-window.addEventListener('DOMContentLoaded', () =>{
+window.addEventListener('DOMContentLoaded', () => {
+
 
     const modalTimerId = setTimeout(() => openModal('.modal', modalTimerId), 300);
 
-     
-          
+
+
     tabs('.tabheader__item', '.tabcontent', '.tabheader__items', 'tabheader__item_active');
     modal('[data-modal]', '[data-modal-on]', modalTimerId);
     calculator();
